@@ -2,7 +2,7 @@
 
 /**
  * hex_aux_print - prints an hexdecimal number
- * @val: ap
+ * @num: ap
  * Return: counter
  */
 
