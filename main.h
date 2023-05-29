@@ -13,7 +13,7 @@
  * @f: the type pointer to function for the conversion specifier
  */
 
-typedef struct format{
+typedef struct format
 {
 	char *id;
 	int (*f)();
