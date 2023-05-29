@@ -35,5 +35,6 @@ int HEX_print(va_list val);
 int print_S(va_list val);
 int pointer_print(va_list val);
 int _putchar(char c);
+int strlen_print(const char *s);
 
 #endif
