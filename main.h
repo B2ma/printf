@@ -28,7 +28,7 @@ int percentage_print(void);
 int dec_print(va_list ap);
 int srev_print(va_list ap);
 int rot13_print(va_list ap);
-int unsigned_print(va_list ap):
+int unsigned_print(va_list ap);
 int octa_print(va_list val);
 int hex_print(va_list val);
 int HEX_print(va_list val);
