@@ -24,7 +24,7 @@ int hex_print(va_list val)
 
 	for (i = 0; i < counter; i++)
 	{
-		array[i] = temp % 16
+		array[i] = temp % 16;
 		temp /= 16;
 	}
 	for (i = counter - 1; i >= 0; i--)
