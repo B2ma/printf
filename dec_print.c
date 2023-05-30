@@ -24,7 +24,7 @@ int dec_print(va_list ap)
 	}
 	if (numb > 0)
 	{
-		while (num / 10 != 0)
+		while (numb / 10 != 0)
 		{
 			exp = exp * 10;
 			numb = numb / 10;
