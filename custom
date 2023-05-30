@@ -17,8 +17,6 @@ int _printf(const char *format, ...)
 	};
 	va_list ap;
 	int i = 0, j, len = 0;
-	char buffer[BUFFER_SIZE];
-	int buffer_index = 0;
 
 	va_start(ap, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -35,18 +33,10 @@ int _printf(const char *format, ...)
 			}
 			j--;
 		}
-		if (buffer_index == BUFFER_SIZE)
-		{
-			write(1,buffer, BUFFER_SIZE);
-			len+= BUFFER_SIZE;
-			buffer_index = 0;
-		}
-		buffer[buffe_index ++] = format[i];
-		len++
+		_putchar(format[i]);
+		len++;
 		i++;
 	}
-	write(1,buffer, buffer_index);
-	len+= buffer_index;
 	va_end(ap);
 	return (len);
 }

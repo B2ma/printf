@@ -2,12 +2,15 @@
 #include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to print
+ * _putchar - prints the content of buffer
+ * @buffer: array of characters
+ * @buff_ind: index to add next char
  * Return: on success 1
  */
 
-int _putchar(char c)
+void _putchar(char buffer[], int *buff_ind)
 {
-	return (write(1, &c, 1));
+	if (*buff_ind > 0)
+		write(1, buffer, *buff_ind));
+	*buff_ind = 0;
 }

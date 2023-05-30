@@ -1,25 +1,15 @@
 #include "main.h"
 #include <unistd.h>
 
-#define BUFFER_SIZE 1024
 /**
-  * _putchar - prints characters
-  * @c: the character to be printed
-  * Return: byte size
-  */
+ * _putchar - prints the content of buffer
+ * @buffer: array of characters
+ * @buff_ind: index to add next char
+ */
 
-int _putchar(char c)
+void _putchar(char buffer[], int *buff_ind)
 {
-	static char buffer[BUFFER_SIZE];
-	static int buffer_index;
-	int bytes_written = 0;
-
-	buffer[buffer_index++] = c;
-	if (buffer_index == BUFFER_SIZE)
-	{
-		bytes_written = write(1, buffer, BUFFER_SIZE);
-		buffer_index = 0;
-	}
-	return (bytes_written > 0 ? 1 : -1);
+	if (*buff_ind > 0)
+		write(1, buffer, *buff_ind);
+	*buff_ind = 0;
 }
-
