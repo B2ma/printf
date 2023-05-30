@@ -24,7 +24,7 @@ int oct_print(va_list val)
 
 	for (i = 0; i < counter; i++)
 	{
-		array[i] = temp % 8
+		array[i] = temp % 8;
 		temp /= 8;
 	}
 	for (i = counter - 1; i >= 0; i--)

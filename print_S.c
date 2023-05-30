@@ -31,7 +31,7 @@ int print_S(va_list val)
 		}
 		else
 		{
-			_putchat(s[i]);
+			_putchar(s[i]);
 			len++;
 		}
 	}
