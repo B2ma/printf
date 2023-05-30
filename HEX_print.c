@@ -10,7 +10,7 @@ int HEX_print(va_list val)
 	int i;
 	int *array;
 	int counter = 0;
-	unsigned int numb = va_arg(va_list, unsigned int);
+	unsigned int numb = va_arg(val, unsigned int);
 	unsigned int temp = numb;
 
 	while (numb / 16 != 0)
