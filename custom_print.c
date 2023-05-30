@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 {
 	conversion_specifier m[] = {
 		{"%s", string_print}, {"%c", char_print},
-		{"&&", percentage_print},
+		{"%%", percentage_print},
 		{"%i", int_print}, {"%d", dec_print},
 		{"%r", srev_print}, {"%R", rot13_print}, {"%b", bin_print},
 		{"%u", unsigned_print}, {"%o", oct_print}, {"%x", hex_print},
