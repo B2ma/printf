@@ -23,7 +23,7 @@ int int_print(va_list ap)
 	}
 	if (numb > 0)
 	{
-		while (num / 10 != 0)
+		while (numb / 10 != 0)
 		{
 			exp = exp * 10;
 			numb = numb / 10;
@@ -31,7 +31,7 @@ int int_print(va_list ap)
 		numb = n;
 		while (exp > 0)
 		{
-			digit = num / exp;
+			digit = numb / exp;
 			_putchar(digit + '0');
 			numb = numb - (digit * exp);
 			exp = exp / 10;

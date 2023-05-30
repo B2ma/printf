@@ -20,9 +20,9 @@ int hex_print(va_list val)
 		counter++;
 	}
 	counter++;
-	array = malloc(counter * sizeof(int))
+	array = malloc(counter * sizeof(int));
 
-	for (i = 0; i < counter, i++)
+	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 16
 		temp /= 16;

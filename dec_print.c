@@ -32,7 +32,7 @@ int dec_print(va_list ap)
 		numb = n;
 		while (exp > 0)
 		{
-			digit = num / exp;
+			digit = numb / exp;
 			_putchar(digit + '0');
 			numb = numb - (digit * exp);
 			exp = exp / 10;
