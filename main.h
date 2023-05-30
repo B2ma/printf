@@ -6,8 +6,18 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <ctype.h>
 
 #define BUFF_SIZE 1024
+
+#define F_MINUS 1
+#define F_PLUS 2
+#define F_ZERO 4
+#define F_HASH 8
+#define F_SPACE 16
+
+#define S_LONG 2
+#define S_SHORT 1
 /**
  * struct format - match the conversion specifiers for printf
  * @id: the char pointer of the specifier i. e (l, h) for d, i, u, o, x, X)
@@ -39,5 +49,9 @@ int _putchar(char c);
 int strlen_print(char *s);
 int hex_aux_print(unsigned long int num);
 int HEX_aux_print(unsigned int num);
+int find_size(const char *format, int *i);
+int find_flags(const char *format, int *i);
+int find_width(const char *format, int *i, va_list list);
+int find_precision(const char *format, int *i, va_list list);
 
 #endif
