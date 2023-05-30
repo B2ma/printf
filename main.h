@@ -29,13 +29,13 @@ int dec_print(va_list ap);
 int srev_print(va_list ap);
 int rot13_print(va_list ap);
 int unsigned_print(va_list ap);
-int octa_print(va_list val);
+int oct_print(va_list val);
 int hex_print(va_list val);
 int HEX_print(va_list val);
 int print_S(va_list val);
 int pointer_print(va_list val);
 int _putchar(char c);
-int strlen_print(const char *s);
+int strlen_print(char *s);
 int hex_aux_print(unsigned long int num);
 int HEX_aux_print(unsigned int num);
 
