@@ -5,12 +5,12 @@
   * @val: the arguments
   * Return: the counter
   */
-int HEX_print(va_list val)
+int HEX_print(va_list, val)
 {
 	int i;
 	int *array;
 	int counter = 0;
-	unsigned int num = va_arg(va, unsigned int);
+	unsigned int numb = va_arg(va_list, unsigned int);
 	unsigned int temp = numb;
 
 	while (numb / 16 != 0)
