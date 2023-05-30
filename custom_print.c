@@ -5,7 +5,7 @@
   * @format: pointer to the format identifier
   * Return: the length of the string
   */
-int _printf(const char *format, ...);
+int _printf(const char *format, ...)
 {
 	conversion_specifier m[] = {
 		{"%s", string_print}, {"%c", char_print},
