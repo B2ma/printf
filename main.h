@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
+#define BUFF_SIZE 1024
 /**
  * struct format - match the conversion specifiers for printf
  * @id: the char pointer of the specifier i. e (l, h) for d, i, u, o, x, X)
