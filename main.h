@@ -35,6 +35,7 @@ int hex_print(va_list val);
 int HEX_print(va_list val);
 int print_S(va_list val);
 int pointer_print(va_list val);
+void print_buffer(char buffer[], int *buff_ind);
 int _putchar(char c);
 int strlen_print(char *s);
 int hex_aux_print(unsigned long int num);
