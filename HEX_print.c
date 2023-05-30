@@ -5,7 +5,7 @@
   * @val: the arguments
   * Return: the counter
   */
-int HEX_print(va_list, val)
+int HEX_print(va_list val)
 {
 	int i;
 	int *array;
