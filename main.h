@@ -17,7 +17,7 @@ typedef struct format
 {
 	char *id;
 	int (*f)();
-} convert_match;
+} conversion_specifier;
 
 int _printf(const char *format, ...);
 int int_print(va_list ap);
