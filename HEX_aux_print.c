@@ -12,9 +12,9 @@ int HEX_aux_print(unsigned int num)
 	int counter = 0;
 	unsigned int temp = num;
 
-	while (numb / 16 != 0)
+	while (num / 16 != 0)
 	{
-		numb /= 16;
+		num /= 16;
 		counter++;
 	}
 	counter++;
