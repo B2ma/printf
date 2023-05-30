@@ -8,7 +8,7 @@
 
 int srev_print(va_list ap)
 {
-	char s = va_arg(ap, char*);
+	char *s = va_arg(ap, char*);
 	int i;
 	int j = 0;
 
