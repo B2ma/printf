@@ -19,30 +19,24 @@ int _printf(const char *format, ...)
 	va_start(ap, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
+Here:
 	while (format[i] != '\0')
 	{
-		if (format[i] == '%')
-		{
-			i++;
-			j = 13;
+		j = 13;
 			while (j >= 0)
 			{
 				if (m[j].id[0] == format[i] && m[j]. id[1] == format[i + 1])
 				{
 					len += m[j].f(ap);
 					i += 2;
-					break;
+					goto Here;
 				}
 				j--;
 			}
-		}
-		else
-		{
 			_putchar(format[i]);
 			len++;
 			i++;
 		}
-	}
 	va_end(ap);
 	return (len);
 }
