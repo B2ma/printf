@@ -53,5 +53,7 @@ int find_size(const char *format, int *i);
 int find_flags(const char *format, int *i);
 int find_width(const char *format, int *i, va_list list);
 int find_precision(const char *format, int *i, va_list list);
+long int convert_size_number(long int nummb, int size);
+long int convert_size_unsgnd(unsigned long int nummb, int size);
 
 #endif
